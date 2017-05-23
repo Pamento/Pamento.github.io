@@ -46,6 +46,7 @@ button, a {
 	margin-bottom: 10px;
 	outline: none;
 	width: 300px;
+	cursor: pointer;
 }
 button {
 	color: #fff;
