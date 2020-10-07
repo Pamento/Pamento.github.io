@@ -27,6 +27,27 @@ h1 {
 
 
 /* -------------------- MAIN -------------------- */
+.stick-header {
+    border-bottom: 1px solid gray;
+}
+
+.stick-cell {
+    display: inline-block;
+    min-width: 50%;
+}
+
+.stick-cell-left {
+    text-align: right;
+}
+
+.stick-cell-left-h {
+    padding-right: 4.6em;
+}
+
+.stick-cell-right-h {
+    padding-left: 4.6em;
+}
+
 .single-row {
     display: flex;
 }
