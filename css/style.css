@@ -1,6 +1,6 @@
 html, body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -15,25 +15,54 @@ header {
 
 h1 {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
     display: inline-block;
 }
+
 .header>p {
     margin-top: 0;
     text-align: right;
+    font-family: monospace;
+    position: relative;
+    right: -1em;
 }
 
+.header>p>span {
+    font-weight: 700;
+    color: blue;
+}
 
 /* -------------------- MAIN -------------------- */
+
+main {
+    resize: vertical;
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#stickyHeader {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 .stick-header {
+    display: flex;
     border-bottom: 1px solid gray;
+    background-color: #ffffff;
 }
 
 .stick-cell {
     display: inline-block;
-    min-width: 50%;
+    width: 50%;
 }
 
 .stick-cell-left {
@@ -52,10 +81,14 @@ h1 {
     display: flex;
 }
 
+.single-row:hover {
+    background-color: rgb(252, 216, 150);
+}
+
 .cell {
     min-height: 50px;
     display: inline-block;
-    min-width: 45%;
+    width: 48%;
 }
 
 .cell>p {
@@ -75,7 +108,7 @@ h1 {
 
 .middle-cell {
     height: inherit;
-    width: 8%;
+    width: 3%;
     border-right: 2px solid gray;
     border-left: 2px solid gray;
     padding-left: 1.3em;
@@ -84,4 +117,13 @@ h1 {
 
 .middle-cell>p {
     text-align: center;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+    border-top: 1px solid gray;
+}
+footer>p {
+    margin-left: 1em;
 }
