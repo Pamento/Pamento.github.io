@@ -3,10 +3,6 @@
 html, body {
   width: 100%;
 }
-<<<<<<< HEAD
-* {
-  box-sizing: border-box;
-=======
 
 header {
     background-color: var(--white-contrast);
@@ -14,7 +10,6 @@ header {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
->>>>>>> add all information for CV
 }
 body {
   margin: 0;
@@ -59,17 +54,12 @@ header>.glyphicon {
 .header-btn>a:hover {
   color: #e6e6e6;
 }
-<<<<<<< HEAD
-.header-btn>a:hover .glyphicon {
-  color: #e6e6e6;
-=======
 .stick-header {
     display: flex;
     border-bottom: 1px solid var(--border-color);
     background-color: #ffffff;
     font-family: monospace;
     font-size: 1.3em;
->>>>>>> add all information for CV
 }
 .hero .slogan>h1 {
   font-weight: 300;
@@ -411,21 +401,6 @@ header>.glyphicon {
   color: #808080;
 }
 
-<<<<<<< HEAD
-.footer-list {
-  display: flex;
-}
-.footer-list .l-head {
-  font-weight: 700;
-}
-.footer-list ul {
-  padding-left: 0px;
-  padding-right: 30px;
-}
-.footer-list ul li {
-  list-style-type: none;
-  padding-left: 0;
-=======
 .middle-cell {
     height: inherit;
     width: 3%;/*
@@ -434,7 +409,6 @@ header>.glyphicon {
     padding-left: 1.3em;
     padding-right: 1.3em;
     font-weight: 500;
->>>>>>> add all information for CV
 }
 
 /* ---- footer_footer rights ----*/
@@ -448,55 +422,6 @@ header>.glyphicon {
   padding: 0;
 }
 
-<<<<<<< HEAD
-/* media queres */
-@media (max-width: 991px) {
-  .article-one>div,
-  .article-one div,
-  [class^="gitem-"],
-  .offert-content div,
-  .footer-item {
-    width: 50%;
-  }
-  .image-pub {
-    position: relative;
-  }
-  .image-pub img {
-    max-width: 360px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .gitem5 {
-    width: 100%;
-  }
-  section,
-  article div,
-  footer {
-    padding: 0 10px;
-  }
-  .form input {
-    width: 300px;
-    height: 51px;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  .footer-item:first-of-type {
-    padding-right: 40px;
-  }
-  .btn-sub .okay {
-    margin: 0;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 300px;
-  }
-
-=======
 a {
     text-decoration: none;
     color: black;
@@ -513,7 +438,6 @@ a {
 footer {
     border-top: 1px solid var(--border-color);
     background-color: var(--white-contrast);
->>>>>>> add all information for CV
 }
 
 @media (max-width: 767px) {
