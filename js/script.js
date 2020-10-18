@@ -1,3 +1,4 @@
+/*
 window.onscroll = function() {stickyAHead()};
 
 var header = document.getElementById("stickyHeader");
@@ -11,3 +12,4 @@ function stickyAHead() {
     header.classList.remove("sticky");
   }
 }
+*/

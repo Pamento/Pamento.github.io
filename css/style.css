@@ -49,11 +49,13 @@ main {
     top: 0;
     width: 100%;
 }
+
 #stickyHeader {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
+
 .stick-header {
     display: flex;
     border-bottom: 1px solid var(--border-color);
@@ -81,10 +83,14 @@ main {
 
 .single-row {
     display: flex;
+    border: solid inherit;
+    border-width: 1px 0 1px 0;
 }
 
 .single-row:hover {
     background-color: rgb(252, 216, 150);
+    border: solid var(--border-color);
+    border-width: 1px 0 1px 0;
 }
 
 .cell {
@@ -110,7 +116,8 @@ main {
 
 .middle-cell {
     height: inherit;
-    width: 3%;/*
+    width: 3%;
+    /*
     border-right: 2px solid var(--border-color);
     border-left: 2px solid var(--border-color);*/
     padding-left: 1.3em;
@@ -138,7 +145,27 @@ a {
 footer {
     border-top: 1px solid var(--border-color);
     background-color: var(--white-contrast);
+    display: flex;
+    justify-content: space-between;
 }
+
 footer>p {
     margin-left: 1em;
+}
+footer>a {
+    margin-right: 1em;
+    margin-top: 1em;
+    height: 2.5em;
+}
+
+/* -------------------- OTHER ELEMENTS -------------------- */
+
+.arrow {
+    border: solid var(--border-color);
+    border-width: 0 9px 9px 0;
+    display: inline-block;
+    padding: 13px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: 0;
 }
