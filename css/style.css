@@ -3,6 +3,7 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+    cursor: context-menu;
 }
 
 header {
@@ -83,7 +84,7 @@ main {
 
 .single-row {
     display: flex;
-    border: solid inherit;
+    border: solid #ffffff;
     border-width: 1px 0 1px 0;
 }
 
@@ -167,5 +168,5 @@ footer>a {
     padding: 13px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    margin-top: 0;
+    margin: 0;
 }

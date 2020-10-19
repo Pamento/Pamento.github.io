@@ -13,3 +13,5 @@ function stickyAHead() {
   }
 }
 */
+
+console.log("de e-cv page: "+document.referrer.indexOf);
