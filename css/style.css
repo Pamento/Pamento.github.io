@@ -9,8 +9,52 @@ html, body {
     margin: 0;
     padding: 0;
     cursor: context-menu;
+<<<<<<< HEAD
 >>>>>>> add link for download CV
+=======
+    background-image: url(../assets/805636.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> add html and first css for sidebar
 }
+
+/* -------------------- SIDEBAR -------------------- */
+
+.vertical-bar-menu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--background-lighte-bleu);
+    opacity: 0.9;
+    border-right: 1px solid var(--border-color);
+    padding: 2.4em 0 2.4em 0;
+    color: var(--color-text-light);
+    font-size: 1.2em;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.vertical-bar-menu>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.vertical-bar-menu>ul>li {
+    padding: 0.5em 2.9em 0.5em 2.9em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.vertical-bar-menu>ul>li:hover {
+    background-color: black;
+}
+
+
+
+/* -------------------- HEADER -------------------- */
 
 header {
     background-color: var(--white-contrast);
@@ -437,7 +481,7 @@ header>.glyphicon {
   padding: 0;
 }
 
-a {
+.middle-cell-ancor {
     text-decoration: none;
     color: black;
     cursor: pointer;
