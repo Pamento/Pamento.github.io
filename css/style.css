@@ -11,6 +11,7 @@ html, body {
 
 body {
     position: relative;
+    background-image: url("../assets/main-background-image.png");
 }
 
 /* -------------------- SIDEBAR -------------------- */
@@ -42,7 +43,7 @@ body {
 }
 
 .vertical-bar-menu a:hover {
-    text-shadow: 1px 1px 5px #f1f1f1;
+    text-shadow: 1px 1px 5px var(--text-shadow);
 }
 
 .vertical-bar-menu .closebtn {
@@ -51,6 +52,19 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.hidden-menu-item, .hidden-menu-item2 {
+    height: 0;
+    overflow-y: hidden;
+}
+
+#menu-contact-ancor:hover ~ .hidden-menu-item {
+    height: 2em;
+}
+
+#menu-more-ancor:hover ~ .hidden-menu-item2 {
+    height: 5em;
 }
 
 /*
@@ -115,6 +129,32 @@ body {
 /* -------------------- HEADER -------------------- */
 
 header {
+    height: 104px;
+}
+
+.about-me {
+    height: 0;
+    overflow-y: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: height 1.4s;
+}
+
+.about-me>p {
+    width: 44%;
+    margin: 0 auto;
+    padding: 1em 1.3em;
+    background: white;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+header:hover~#about-me {
+    height: 16em;
+}
+
+/*
+header {
     background-color: var(--white-contrast);
     box-shadow: 0 -1px 10px inset;
     padding-top: 1em;
@@ -142,7 +182,7 @@ h1 {
 .header>p>span {
     font-weight: 700;
     color: blue;
-}
+}*/
 
 /* -------------------- MAIN -------------------- */
 
@@ -192,7 +232,8 @@ main {
 
 .single-row {
     display: flex;
-    border: solid #ffffff;
+    background-color: white;
+    border: solid white;
     border-width: 1px 0 1px 0;
 }
 
@@ -272,9 +313,9 @@ footer>a {
 
 .arrow {
     border: solid var(--border-color);
-    border-width: 0 9px 9px 0;
+    border-width: 0 6px 6px 0;
     display: inline-block;
-    padding: 13px;
+    padding: 9px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin: 0;
