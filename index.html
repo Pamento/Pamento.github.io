@@ -16,20 +16,35 @@
 </head>
 
 <body>
+    <a name="top"></a>
     <!-- Sidebar -->
-    <div class="vertical-bar-menu">
-        <ul>
-            <li><a class="v-bar-menu-ancor" href="#"></a>Abaout me</li>
-            <li><a class="v-bar-menu-ancor" href="#"></a>Contact</li>
-            <li><a class="v-bar-menu-ancor" href="#"></a>More</li>
-            <li><a class="v-bar-menu-ancor" href="#"></a>Less</li>
-        </ul>
+    <div id="menu-list-icon" class="menu-list-icon" onclick="openNav()">
+        <div>
+            <div class="menu-list-row">
+                <div class="menu-design-size menu-list-point"></div>
+                <div class="menu-design-size menu-list-line"></div>
+            </div>
+            <div class="menu-list-row">
+                <div class="menu-design-size menu-list-point"></div>
+                <div class="menu-design-size menu-list-line"></div>
+            </div>
+            <div class="menu-list-row">
+                <div class="menu-design-size menu-list-point"></div>
+                <div class="menu-design-size menu-list-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-bar-menu" id="vertical-bar-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="v-bar-menu-ancor" href="#">About me</a>
+        <a class="v-bar-menu-ancor" href="#">Contact</a>
+        <a class="v-bar-menu-ancor" href="#">More</a>
+        <a class="v-bar-menu-ancor" href="#">Less</a>
     </div>
 
 
 
-    <a name="top"></a>
-    <header>
+    <header id="header">
         <nav></nav>
         <div class="header">
             <h1>Développeur web & web mobile</h1>
@@ -94,6 +109,7 @@
     </div>
   </section>
 
+<<<<<<< HEAD
 <!-- 4 ---- offert possibility -->
   <section>
     <div class="container boks">
@@ -116,6 +132,14 @@
         <div>
           <h6>Sustainability</h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequuntur accusantium nisi vitae architecto, quod debitis obcaecati nostrum illum saepe aliquid earum, similique est?</p>
+=======
+    <div id="stickyHeader" class="stick-header">
+        <div class="stick-cell stick-cell-left">
+            <p class="stick-cell-left-h">Education</p>
+        </div>
+        <div class="stick-cell stick-cell-right">
+            <p class="stick-cell-right-h">Experience</p>
+>>>>>>> add sidebar menu; change sticky underheader background color.
         </div>
       </div>
     </div>  
@@ -136,7 +160,8 @@
         <!-- Content of main, after header h3 -->
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>, Paris<br>
+                <p><a class="middle-cell-ancor" href="https://openclassrooms.com/fr/"
+                        target="_blank">OpenClassrooms</a>, Paris<br>
                     <span class="school-titre">"Développeur d'applications Android"</span></p>
             </div>
             <div class="middle-cell">
@@ -161,7 +186,8 @@
         </div>
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://www.simplonlyon.fr/AccueilSimplon/index.php" target="_blank">Simplon.co</a>,
+                <p><a class="middle-cell-ancor" href="https://www.simplonlyon.fr/AccueilSimplon/index.php"
+                        target="_blank">Simplon.co</a>,
                     Vénissieux<br>
                     <span class="school-titre">"Développeur web & web mobile"</span><br>
                     React.js, React Native, Scrum, Expo, WordPress, Git, GitLub.</p>
@@ -170,13 +196,15 @@
                 <p title="agé de 40 ans">2019</p>
             </div>
             <div class="cell cell-right">
-                <p><a class="middle-cell-ancor" href="https://aidodys.com/" target="_blank">Aidodys.com</a> en alternence.<br>
+                <p><a class="middle-cell-ancor" href="https://aidodys.com/" target="_blank">Aidodys.com</a> en
+                    alternence.<br>
                     Angular 7, Node.js, Mongo.db, Ionic 4, Git.<br>Environement Linux. </p>
             </div>
         </div>
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://www.simplonlyon.fr/AccueilSimplon/index.php">Simplon.co</a>, Villeurbanne<br>
+                <p><a class="middle-cell-ancor"
+                        href="https://www.simplonlyon.fr/AccueilSimplon/index.php">Simplon.co</a>, Villeurbanne<br>
                     <span class="school-titre">"Développeur web"</span><br>
                     Angular 6, Kanban, PHP, SQL, WordPress, Git, GitHub, Docker, NGINX.</p>
             </div>
@@ -189,7 +217,8 @@
         </div>
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://kodilla.com/pl" target="_blank">Kodilla.com</a>, Pologne<br>
+                <p><a class="middle-cell-ancor" href="https://kodilla.com/pl" target="_blank">Kodilla.com</a>,
+                    Pologne<br>
                     <span class="school-titre">"Integrateur web"</span><br>
                     HTML5, CSS3, JavaScript, Git, GitHub, creation de sites statique à partire d'une maquette ("Pixel
                     prés").</p>
@@ -209,7 +238,8 @@
                 <p title="agé de 37 ans">2016</p>
             </div>
             <div class="cell cell-right">
-                <p><a class="middle-cell-ancor" href="https://www.mahola-hotesses.fr" target="_blank">Mahola</a>, Paris<br>
+                <p><a class="middle-cell-ancor" href="https://www.mahola-hotesses.fr" target="_blank">Mahola</a>,
+                    Paris<br>
                     <span class="school-titre">"Hote d'accueil".</span><br>Respect du client, l'écoute du client, bonne
                     présentation.</p>
             </div>
@@ -234,7 +264,8 @@
                 <p title="agé de 36 ans">2015</p>
             </div>
             <div class="cell cell-right">
-                <p><a class="middle-cell-ancor" href="https://www.mahola-hotesses.fr" target="_blank">Mahola</a>, Paris<br>
+                <p><a class="middle-cell-ancor" href="https://www.mahola-hotesses.fr" target="_blank">Mahola</a>,
+                    Paris<br>
                     <span class="school-titre">"Hote d'accueil".</span><br>
                     Respect du client, l'écoute du client, bonne présentation.</p>
             </div>
@@ -261,7 +292,8 @@
                 <p title="agé de 35 ans">2013/4</p>
             </div>
             <div class="cell cell-right">
-                <p><a class="middle-cell-ancor" href="https://www.e-leclerc.com/st-priest" target="_blank">Leclerc</a>, Saint-Priest<br>
+                <p><a class="middle-cell-ancor" href="https://www.e-leclerc.com/st-priest" target="_blank">Leclerc</a>,
+                    Saint-Priest<br>
                     <span class="school-titre">"Service polyvalant".</span><br>
                     Mise en rayons.</p>
             </div>
@@ -352,7 +384,8 @@
                 <p title="agé de 24 ans">2003</p>
             </div>
             <div class="cell cell-right">
-                <p><a class="middle-cell-ancor" href="https://www.makro.pl/hale/gdansk-przejazdowo" target="_blank">Makro</a>, Pologne.<br>
+                <p><a class="middle-cell-ancor" href="https://www.makro.pl/hale/gdansk-przejazdowo"
+                        target="_blank">Makro</a>, Pologne.<br>
                     <span class="school-titre">"Magasinier"</span>
                     Réception du marchandise, géstion du stock.<br></p>
             </div>
@@ -372,7 +405,8 @@
         </div>
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://gdansk.zak.edu.pl" target="_blank">ZAK,</a> école extra-muros.<br>
+                <p><a class="middle-cell-ancor" href="https://gdansk.zak.edu.pl" target="_blank">ZAK,</a> école
+                    extra-muros.<br>
                     <span class="school-titre">"Architect d'intereur".</span><br>
                     Amenagement d'interieurs, dessin, maquette.</p>
             </div>
@@ -387,7 +421,8 @@
         </div>
         <div class="single-row">
             <div class="cell cell-left">
-                <p><a class="middle-cell-ancor" href="https://pg.edu.pl" target="_blank">Polytechnique</a> extra-muros.<br>
+                <p><a class="middle-cell-ancor" href="https://pg.edu.pl" target="_blank">Polytechnique</a>
+                    extra-muros.<br>
                     <span class="school-titre">"Construction des batiments".</span></p>
             </div>
             <div class="middle-cell">
@@ -468,6 +503,17 @@
         </a>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("menu-list-icon").style.display = "none";
+            document.getElementById("vertical-bar-menu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("vertical-bar-menu").style.width = "0";
+            document.getElementById("menu-list-icon").style.display = "flex";
+        }
+    </script>
 </body>
 
 <!-- 6 ---- invitation -->
