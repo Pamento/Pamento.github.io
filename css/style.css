@@ -11,6 +11,7 @@ html, body {
 
 body {
     position: relative;
+    background-image: url("../assets/main-background-image.png");
 }
 
 /* -------------------- SIDEBAR -------------------- */
@@ -41,8 +42,12 @@ body {
     transition: 0.3s;
 }
 
+.vertical-bar-menu a:nth-child(n+2) {
+    padding-left: 2em;
+}
+
 .vertical-bar-menu a:hover {
-    text-shadow: 1px 1px 5px #f1f1f1;
+    text-shadow: 1px 1px 5px var(--text-shadow);
 }
 
 .vertical-bar-menu .closebtn {
@@ -53,11 +58,19 @@ body {
     margin-left: 50px;
 }
 
-/*
-.vertical-bar-menu:hover+#header {
-    background-color: black;
+.hidden-menu-item, .hidden-menu-item2 {
+    height: 2em;
+    overflow-y: hidden;
+    transition: height 1.4s;
 }
-*/
+
+.hidden-menu-item:hover, .hidden-menu-item2:hover {
+    height: 5em;
+}
+
+.hidden-menu-item2:hover {
+    height: 7.5em;
+}
 
 .menu-list-icon {
     display: flex;
@@ -115,6 +128,36 @@ body {
 /* -------------------- HEADER -------------------- */
 
 header {
+    height: 104px;
+}
+
+.about-me {
+    height: 0;
+    overflow-y: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    transition: height 1.4s;
+}
+
+.about-me>p {
+    width: 44%;
+    margin: 0 auto;
+    padding: 1em 1.3em;
+    background: white;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+header:hover~#about-me, #about-me:hover {
+    height: 16em;
+}
+
+/* If the CSS style of header build in html is commented,
+this is mean that the header of page is made by background-image:
+"main-background-image.png"*/
+
+/*
+header {
     background-color: var(--white-contrast);
     box-shadow: 0 -1px 10px inset;
     padding-top: 1em;
@@ -142,7 +185,7 @@ h1 {
 .header>p>span {
     font-weight: 700;
     color: blue;
-}
+}*/
 
 /* -------------------- MAIN -------------------- */
 
@@ -192,7 +235,8 @@ main {
 
 .single-row {
     display: flex;
-    border: solid #ffffff;
+    background-color: white;
+    border: solid white;
     border-width: 1px 0 1px 0;
 }
 
@@ -249,6 +293,12 @@ main {
     font-weight: 400;
 }
 
+hr {
+    height: 1px;
+    background: blue;
+    border: none;
+}
+
 /* -------------------- FOOTER -------------------- */
 
 footer {
@@ -272,9 +322,9 @@ footer>a {
 
 .arrow {
     border: solid var(--border-color);
-    border-width: 0 9px 9px 0;
+    border-width: 0 6px 6px 0;
     display: inline-block;
-    padding: 13px;
+    padding: 9px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin: 0;
