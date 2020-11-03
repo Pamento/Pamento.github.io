@@ -15,7 +15,7 @@
 <body>
     <a name="top"></a>
     <!-- Sidebar -->
-    <div id="menu-list-icon" class="menu-list-icon" onclick="openNav()">
+    <div id="menu-list-icon" class="menu-list-icon" onclick="openBarMenu()">
         <div>
             <div class="menu-list-row">
                 <div class="menu-design-size menu-list-point"></div>
@@ -32,21 +32,22 @@
         </div>
     </div>
     <div class="vertical-bar-menu" id="vertical-bar-menu">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a id="menu-contact-ancor" class="v-bar-menu-ancor" href="#">Contact</a>
-        <div class="hidden-menu-item"><a href="https://www.linkedin.com/in/pawel-grzesik/"
-                class="v-bar-menu-ancor">LinkedIn</a></div>
-        <a id="menu-more-ancor" class="v-bar-menu-ancor" href="#">More</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBarMenu()">&times;</a>
+        <div class="hidden-menu-item">
+            <a id="menu-contact-ancor" class="v-bar-menu-ancor" href="#">Contact</a>
+            <a href="https://www.linkedin.com/in/pawel-grzesik/" target="_blank" class="v-bar-menu-ancor">LinkedIn</a>
+        </div>
         <div class="hidden-menu-item2">
-            <a href="https://codepen.io/Pamento/" class="v-bar-menu-ancor">Codepen</a>
-            <a href="https://github.com/Pamento" class="v-bar-menu-ancor">GitHub</a>
+            <a id="menu-more-ancor" class="v-bar-menu-ancor" href="#">More</a>
+            <a href="https://codepen.io/Pamento/" target="_blank" class="v-bar-menu-ancor">Codepen</a>
+            <a href="https://github.com/Pamento" target="_blank" class="v-bar-menu-ancor">GitHub</a>
         </div>
 
     </div>
 
-
-
     <header id="header">
+        <!-- This is origin header made in html. If it is commented, that is mean 
+        that header is made by background-image: main-background-image.png. -->
         <!--        <nav></nav>
         <div class="header">
             <h1>Développeur web & web mobile</h1>
@@ -424,12 +425,12 @@
     </footer>
     <script src="js/script.js"></script>
     <script>
-        function openNav() {
+        function openBarMenu() {
             document.getElementById("menu-list-icon").style.display = "none";
             document.getElementById("vertical-bar-menu").style.width = "250px";
         }
 
-        function closeNav() {
+        function closeBarMenu() {
             document.getElementById("vertical-bar-menu").style.width = "0";
             document.getElementById("menu-list-icon").style.display = "flex";
         }

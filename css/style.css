@@ -42,6 +42,10 @@ body {
     transition: 0.3s;
 }
 
+.vertical-bar-menu a:nth-child(n+2) {
+    padding-left: 2em;
+}
+
 .vertical-bar-menu a:hover {
     text-shadow: 1px 1px 5px var(--text-shadow);
 }
@@ -55,23 +59,18 @@ body {
 }
 
 .hidden-menu-item, .hidden-menu-item2 {
-    height: 0;
-    overflow-y: hidden;
-}
-
-#menu-contact-ancor:hover ~ .hidden-menu-item {
     height: 2em;
+    overflow-y: hidden;
+    transition: height 1.4s;
 }
 
-#menu-more-ancor:hover ~ .hidden-menu-item2 {
+.hidden-menu-item:hover, .hidden-menu-item2:hover {
     height: 5em;
 }
 
-/*
-.vertical-bar-menu:hover+#header {
-    background-color: black;
+.hidden-menu-item2:hover {
+    height: 7.5em;
 }
-*/
 
 .menu-list-icon {
     display: flex;
@@ -153,6 +152,9 @@ header:hover~#about-me {
     height: 16em;
 }
 
+/* If the CSS style of header build in html is commented,
+this is mean that the header of page is made by background-image:
+"main-background-image.png"*/
 /*
 header {
     background-color: var(--white-contrast);
