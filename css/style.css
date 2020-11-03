@@ -443,3 +443,54 @@ footer>a {
     height: initial;
   }
 }
+
+@media (min-width: 567px) and (max-width: 949px) {
+  body {
+    background-image: none;
+  }
+  #header-content {
+    display: inline-block;
+  }
+  header {
+    height: initial;
+    text-align: center;
+    background-color: var(--white-contrast);
+    box-shadow: 0 -1px 10px inset;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
+  }
+  .header {
+    display: inline-block;
+    text-align: right;
+    height: 0;
+  }
+  .header>p {
+    margin-top: 0;
+    text-align: right;
+    font-family: monospace;
+    position: relative;
+    right: -1em;
+  }
+  .header>p>span {
+    font-weight: 700;
+    color: blue;
+  }
+  .about-me {
+    height: initial;
+  }
+  .about-me>p {
+    margin: auto;
+    width: 80%;
+    font-size: .8em;
+    line-height: initial;
+    padding: 1em;
+  }
+  .hidden-menu-item, .hidden-menu-item2 {
+    height: initial;
+  }
+}
