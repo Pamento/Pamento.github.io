@@ -3,6 +3,7 @@
     --border-color: gray;
     --background-lighte-bleu: DodgerBlue;
     --background-dark-gray: #384055;
+    --background-on-hover: rgb(252, 216, 150);
     --color-text-light: aliceblue;
     --text-shadow: #f1f1f1;
 }
