@@ -200,12 +200,6 @@ main {
   font-weight: 300;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 #stickyHeader {
   position: -webkit-sticky;
   position: sticky;
@@ -334,7 +328,7 @@ footer>a {
   margin: 0;
 }
 
-/* ------------------ MEDIA SCREEN ------------------ */
+/* ------------------ MEDIA SCREEN for the mobile and small tablet ------------------ */
 
 @media (max-width: 767px) {
   body {
@@ -380,23 +374,72 @@ footer>a {
     width: 45px;
     height: 45px;
   }
-
   .single-row {
-    display: block;
+    display: flex;
+    overflow-x: scroll;
     background-color: white;
     border: solid white;
     border-width: 1px 0 1px 0;
+    font-size: .9em;
   }
-
   .single-row:nth-child(odd) {
     background-color: var(--background-on-hover);
     border: solid var(--border-color);
     border-width: 1px 0 1px 0;
   }
-
+  .stick-header {
+    font-family: monospace;
+    font-size: initial;
+    padding: 5px;
+  }
+  .stick-cell-left {
+    text-align: left;
+  }
+  .stick-cell-right {
+    text-align: right;
+  }
   .stick-cell-left-h, .stick-cell-right-h {
     margin: 0;
     font-size: 1em;
     padding: 0;
+  }
+  .cell {
+    width: initial;
+  }
+  .cell>p {
+    max-width: initial;
+  }
+  .cell-left, .cell-right {
+    min-width: 60vw;
+  }
+  .middle-cell {
+    width: initial;
+    padding: 0;
+  }
+  footer {
+    flex-direction: column-reverse;
+    padding-left: .5em;
+  }
+  footer>a {
+    height: initial;
+  }
+  footer>a:last-child {
+    margin-left: .5em;
+  }
+  footer>p {
+    margin-left: 0;
+  }
+  .about-me {
+    height: initial;
+  }
+  .about-me>p {
+    margin: 0;
+    width: initial;
+    font-size: .8em;
+    line-height: initial;
+    padding: .8em;
+  }
+  .hidden-menu-item, .hidden-menu-item2 {
+    height: initial;
   }
 }
