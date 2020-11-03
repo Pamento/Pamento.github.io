@@ -148,13 +148,14 @@ header {
     line-height: 1.6;
 }
 
-header:hover~#about-me {
+header:hover~#about-me, #about-me:hover {
     height: 16em;
 }
 
 /* If the CSS style of header build in html is commented,
 this is mean that the header of page is made by background-image:
 "main-background-image.png"*/
+
 /*
 header {
     background-color: var(--white-contrast);
@@ -290,6 +291,12 @@ main {
 
 .school-titre {
     font-weight: 400;
+}
+
+hr {
+    height: 1px;
+    background: blue;
+    border: none;
 }
 
 /* -------------------- FOOTER -------------------- */
