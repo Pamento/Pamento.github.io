@@ -12,6 +12,8 @@ html, body {
 body {
   position: relative;
   background-image: url("../assets/main-background-image.png");
+  background-color: var(--bg, white);
+  color: var(--bg-text, black);
 }
 
 /* -------------------- SIDEBAR -------------------- */
@@ -61,7 +63,7 @@ body {
 .hidden-menu-item, .hidden-menu-item2 {
   height: 2em;
   overflow-y: hidden;
-  transition: height 1.4s;
+  transition: height 1s;
 }
 
 .hidden-menu-item:hover, .hidden-menu-item2:hover {
@@ -125,6 +127,12 @@ body {
   width: 24px;
 }
 
+.theme {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em 0;
+}
+
 /* -------------------- HEADER -------------------- */
 
 #header-content {
@@ -140,7 +148,7 @@ header {
   overflow-y: hidden;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  transition: height 1.4s;
+  transition: height 1.2s;
 }
 
 .about-me>p {
